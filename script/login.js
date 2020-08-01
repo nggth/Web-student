@@ -1,20 +1,30 @@
-/*Submit From*/
-// Self-executing function
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                  event.preventDefault();
-                  event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-          }, false);
-      });
-  }, false);
-})();
+const cards = document.querySelectorAll('.card');
 
+/* View Controller
+-----------------------------------------*/
+const btns = document.querySelectorAll('.js-btn');
+btns.forEach((btn) => {
+  btn.addEventListener('click', on_btn_click, true);
+  btn.addEventListener('touch', on_btn_click, true);
+});
+
+function on_btn_click (e) {
+  const nextID = e.currentTarget.getAttribute('data-target');
+  const next = document.getElementById(nextID);
+  if(!next) return;
+  bg_change(nextID);
+  view_change(next);
+  return false;
+}
+
+/* Add class to the body */
+function bg_change(next) {
+  document.body.className = '';
+  document.body.classList.add('is-'+next);
+}
+
+/* Add class to a card */
+function view_change(next) {
+  cards.forEach((card) => { card.classList.remove('is-show'); });
+  next.classList.add('is-show');
+}
