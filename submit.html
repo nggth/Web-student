@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/submitcss.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+   
+    <!---------Date--------->
+    <link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"><script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    
+    <!---------Menu dropdown--------->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+   
+
+    
+    <title>Submit form</title>
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="#" class="nav-item nav-link">Profile</a>
+                <a href="#" class="nav-item nav-link">Messages</a>
+                <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+            </div>
+            <form class="form-inline ml-auto">
+                <input type="text" class="form-control mr-sm-2" placeholder="Search">
+                <button type="submit" class="btn btn-outline-light">Search</button>
+            </form>
+        </div>
+    </nav>
+
+ <!-- menu slide -->
+ <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/slide1.jpg" style="width:100%">
+      <!-- <div class="text">Caption Text</div> -->
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/slide2.jpg" style="width:100%">
+      <!-- <div class="text">Caption Two</div> -->
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/slide3.jpg" style="width:100%">
+      <!-- <div class="text">Caption Three</div> -->
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <br>
+    <!-- Danh sách -->
+    <form class="needs-validation">
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="firstName">First Name:</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="lastName">Last Name:</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="inputClass">Class:</label>
+            <div class="col-sm-9">
+                <input type="class" class="form-control" id="inputClass" placeholder="Class" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="address">Address:</label>
+            <div class="col-sm-9">
+                <input type="address" class="form-control" id="address" placeholder="Address" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="inputEmail">Email Address:</label>
+            <div class="col-sm-9">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email Address" required>
+            </div>
+        </div>
+        
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Date of Birth:</label>
+            <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy"> <input class="form-control" readonly="" type="text"> <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> 
+            </div>
+  
+        </div>
+        
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Gender:</label>
+            <div class="col-sm-9 mt-2">
+                <label class="mb-0 mr-3">
+                    <input type="radio" class="mr-1" name="gender"> Male
+                </label>
+                <label class="mb-0 mr-3">
+                    <input type="radio" class="mr-1" name="gender"> Female
+                </label>
+            </div>
+        </div>
+        
+        <div class="form-group row">
+            <div class="col-sm-9 offset-sm-3">
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="reset" class="btn btn-secondary" value="Reset">
+            </div>
+        </div>
+        </form>
+</body>
+<script src="script/submit.js"></script>
+</html>
