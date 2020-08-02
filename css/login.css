@@ -122,9 +122,7 @@ body{
 .card--welcome .btn-login-ad:hover{
   color:#ee9ca7;
 }
-.card--welcome .btn-login-stu{
-  background-color:#a7bfe8;
-}
+
 .card--login-ad .card-title{
   color:#ee9ca7;
 }
@@ -152,33 +150,7 @@ body{
 .card--login-ad .form-control:focus{
   box-shadow:0 0 0 0.2rem rgba(238,156,167,.25);
 }
-.card--login-stu .card-title{
-    color:#a7bfe8;
-  }
-.card--login-stu .badge{
-    background-color:#a7bfe8;
-}
-.card--login-stu .btn{
-  border-top-left-radius: 15px;
-    background-color:#a7bfe8;
-}
-.card--login-stu .btn:hover{
-  border-top-left-radius: 15px;
-  background-color:#fff;
-  color:#a7bfe8 !important;
-  font-weight:bold;
-  border:2px solid rgba(167,191,232,.25);
-}
-.card--login-stu .btn:focus{
-  box-shadow:0 0 0 0.2rem rgba(167,191,232,.25);
-}
-.card--login-stu .form-control{
-  color:#a7bfe8;
-  border-color:rgba(167,191,232,.25);
-  }
-.card--login-stu .form-control:focus{
-  box-shadow:0 0 0 0.2rem rgba(167,191,232,.25);
-}
+
 body{
   background:linear-gradient(to right, #ffdde1, #ee9ca7, #a7bfe8, #6190e8);
   background-size:500% 500%;
