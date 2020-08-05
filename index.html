@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js" />
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <link rel="stylesheet" href="css/index.css">
+    <title>Information</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Form welcome  -->
+        <div class="card-wrap">
+          <div class="card border-0 shadow card--welcome is-show" id="welcome">
+            <div class="card-body">
+              <h2 class="card-title">WELCOME</h2>
+              <p>Welcome to the login page</p>
+              <div class="btn-wrap"><a class="btn btn-lg btn-login-ad js-btn" data-target="login-ad">ADMIN</a></div>
+            </div>
+          </div>
+
+          <!-- Đăng nhập cho admin -->
+          <div class="card border-0 shadow card--login-ad" id="login-ad">
+            <div class="card-body">
+              <h2 class="card-title">Welcome Back!</h2>
+              <p>Please login with your personal info</p>
+              <form>
+                <div class="form-group">
+                  <input class="form-control" type="email" placeholder="Email" required="required"/>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="password" placeholder="Password" required="required"/>
+                </div>
+                <p><a>Forgot your password?</a></p>
+                <button class="btn btn-lg">LOGIN</button>
+              </form>
+            </div>
+            <button class="btn btn-back js-btn" data-target="welcome"><i class="fas fa-angle-left"></i></button>
+          </div>
+          
+        </div>
+      </div>
+
+</body>
+<script src="script/index.js"></script>
+</html>
